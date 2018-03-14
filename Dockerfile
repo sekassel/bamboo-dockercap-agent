@@ -2,7 +2,8 @@ FROM atlassian/bamboo-java-agent
 
 RUN apt-get update && apt-get install -y \
   python-software-properties \
-  software-properties-common
+  software-properties-common \
+  openssh-client
 
 RUN add-apt-repository ppa:openjdk-r/ppa && \
   apt-get update && \
